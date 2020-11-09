@@ -5,7 +5,7 @@ This program allows you to see the usage of bikes from stations in the Oslo area
 Requires python
 Download repository and install requirements using
 ```
-pip install foobar
+pip install requirements.txt
 ```
 # Usage
 Run main.py
