@@ -56,7 +56,8 @@ def productOfLargest(_list, k=3):
     returns:
     int:The product
     '''
-    heap = MaxHeap(_list) #Alternatives: sorted list, heapq with negative version of list
+    abslist = [abs(x) for x in _list]
+    heap = MaxHeap(abslist) #Alternatives: sorted list, heapq with negative version of list
     product = 1
     for i in range(k):
         product *= heap.popMax()
